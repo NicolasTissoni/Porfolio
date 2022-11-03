@@ -1,0 +1,82 @@
+@import '../../styles/index.scss';
+
+.proyectos-Container {
+    border: 2px solid white;
+    min-height: 500px;
+    @include media(desktop) {
+        min-height: unset;
+        width: 60%;
+        margin: 0 auto;       
+    }
+    .proyectos-Info-Container {
+        text-align: center;
+        margin: 20px;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 10px;
+
+        img {
+            width: 300px;
+            height: 130px;
+            @include media(tablet) {
+                height: 300px;
+                width: 100%;
+            }
+            @include media(desktop) {
+                height: 400px;
+                width: 100%;   
+            }
+        }
+    
+        .proyectos-tecnologias-usadas {
+            color: white;
+            text-align: start;
+            margin: 0 10px;
+
+            @include media(tablet) {
+                text-align: center;
+            }
+        }
+
+        
+        .proyectos-imagen-hover {  
+            &:before, &:after {
+                content: '';
+                position: absolute;
+            }
+
+            .txt {
+                color: white;
+                position: absolute;
+            }   
+        }   
+    }
+
+    .proyectos-Proximamente {
+        text-align: center;
+        margin: 20px;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 10px;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            color: white;
+        
+        }
+    }
+
+    .proyectos-titulo {
+        color: white;
+        text-align: center;
+        border-bottom: 3px solid white;
+        width: 35%;
+        margin: 10px auto;
+        @include media(desktop) {
+            width: 15%;     
+        }
+    }
+}

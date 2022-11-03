@@ -1,0 +1,66 @@
+@import '../../styles/index.scss';
+
+.sobre-Mi-Container {
+    margin-top: 20px;
+    border: 2px solid white;
+    min-height: 500px;
+    margin: 10px auto;
+    @include media(desktop) {
+        min-height: unset;
+        width: 60%;   
+    }
+
+    .sobre-Mi-Titutlo {
+        color: white;
+        text-align: center;
+        border-bottom: 3px solid white;
+        width: 30%;
+        margin: 10px auto;
+        @include media(desktop) {
+            width: 15%;     
+        }
+    }
+
+    .sobre-Mi-Info-Container {
+        text-align: center;
+
+        .sobre-Mi-Foto {
+            height: 300px;
+            margin: 0 auto;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        .sobre-Mi-Texto { 
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .sobre-Mi-Iconos-Container {
+            color: white;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 20px;
+            @include media(desktop) {
+                justify-content: center;    
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                
+                @include media(desktop) {
+                    padding: 10px;
+                    padding: 10px;
+                    border-radius: 10px;
+                    &:hover {
+                        background-color: rgb(253, 253, 253);
+                        color: rgb(0, 0, 26);
+                    }       
+                }
+            }
+        }
+    }
+}

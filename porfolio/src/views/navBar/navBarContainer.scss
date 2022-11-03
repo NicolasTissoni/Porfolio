@@ -1,0 +1,138 @@
+@import '../../styles/index.scss';
+
+.navBar-container {
+    display: flex;
+    padding: 20px;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include media(desktop) {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .bar {
+        position: relative;
+        width: 50px;
+        height: 40px;
+        @include media(desktop) {
+         display: none;   
+        }
+        input[type="checkbox"]{
+            display: none;
+            visibility: hidden;
+        }
+
+        span {
+            position: absolute;
+            width: 45px;
+            height: 7px;
+            background: #f1faee;
+            border-radius: 100px;
+            display: inline-block;
+            transition: 0.3s ease;
+            left: 0;
+    
+            &.top{
+                top: 0;
+            }
+            
+    
+            &.middle{
+                top: 17px;
+            }
+            
+    
+            &.bottom{
+                bottom: 0;
+            }
+        }
+      
+        input[type]:checked ~ span {
+            &.top{
+                transform: rotate(45deg);
+                transform-origin: top left;
+                width: 48px;
+                left: 5px;
+            }
+            &.bottom {
+                transform: rotate(-45deg);
+                transform-origin: top left;
+                width: 48px;
+                bottom: -1px;
+                box-shadow: 0 0 10px #495057;
+            }
+            &.middle {
+                transform: translateX(-20px);
+                opacity: 0;
+            }  
+        }
+    }
+
+    .tittle {
+        color: white;
+        border-bottom: 3px solid white;
+        margin: 0 auto;
+
+    }
+
+    .li-contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0;
+        position: absolute;
+        left: -1000px;
+        top: 50px;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(0, 0, 26);
+        padding: 10px;
+        
+        @include media(desktop) {
+            position: relative;
+            top: unset;
+            left: unset;
+            flex-direction: row;
+            margin: unset;
+            justify-content: space-evenly;
+            margin: 20px auto;
+        }
+
+        &.active {
+            left: 0px;
+        }
+
+        .li-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            
+            .navBar-contenido {
+                color: white;
+                margin: 10px auto;
+                border: 3px solid white;
+                padding: 10px;
+                width: 50%;
+                border-radius: 7px;
+                text-decoration: none;
+            
+                @include media(tablet) {
+                    width: 100px;
+                }
+
+                @include media(desktop) {
+                    width: 100%;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: rgb(253, 253, 253);
+                        color: rgb(0, 0, 26);
+                    }
+                }
+            }  
+        }
+        
+    }  
+}
