@@ -13,7 +13,7 @@ const SobreMi = () => {
         <div className='sobre-Mi-Iconos-Container'>
           <a href="https://www.linkedin.com/in/nicolas-tissoni-9b4838207/" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/NicolasTissoni" target='_blank'><i className="fa-brands fa-github"></i></a>
-            <a target='_blank' href={CV}>CV</a>
+          <a href={CV}>CV</a>
         </div>
       </div>
     </div>
