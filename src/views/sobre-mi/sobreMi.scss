@@ -16,6 +16,9 @@
         border-bottom: 3px solid white;
         width: 30%;
         margin: 10px auto;
+        @include media(tablet) {
+            width: 160px;
+        }
         @include media(desktop) {
             width: 15%;     
         }

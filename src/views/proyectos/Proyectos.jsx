@@ -9,7 +9,12 @@ const Proyectos = () => {
         <div className='proyectos-Info-Container'>
             <img src={Ecommerce} alt="Proyecto E-Commerce" />
             <h3 className='proyectos-tecnologias-usadas'>E-Commerce</h3>
-            <p className='proyectos-tecnologias-usadas'>Tecnologias Usadas: React, GitHub, FireBase</p>
+            <div class="overlay">
+              <div class="overlay-text">
+                <h2>Tecnologias Usadas:</h2>
+                <p>React, FireBase, Sass, Node js</p>
+              </div>
+            </div>
         </div>
         <div className='proyectos-Proximamente'>
             <h3>Proximamente...</h3>

@@ -19,6 +19,9 @@
         border-bottom: 3px solid white;
         width: 40%;
         margin: 10px auto;
+        @include media(tablet) {
+            width: 160px;
+        }
         @include media(desktop) {
             width: 15%;     
         }
@@ -36,6 +39,10 @@
 
         @include media(tablet) {
             width: 50%;
+        }
+
+        @include media(desktop) {
+            width: 60%;
         }
 
         i {

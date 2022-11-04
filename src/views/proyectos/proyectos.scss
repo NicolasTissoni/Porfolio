@@ -3,10 +3,11 @@
 .proyectos-Container {
     border: 2px solid white;
     min-height: 500px;
+    
     @include media(desktop) {
         min-height: unset;
         width: 60%;
-        margin: 0 auto;       
+        margin: 0 auto;
     }
     .proyectos-Info-Container {
         text-align: center;
@@ -14,10 +15,45 @@
         border: 2px solid white;
         padding: 10px;
         border-radius: 10px;
-
+        position: relative;
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgb(0, 0, 26);
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+              
+            &:hover {
+                opacity: 0.7;
+            }
+            .overlay-text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                padding: 40px;
+                @include media(tablet) {
+                    padding: unset;
+                }
+                @include media(desktop) {
+                    padding: unset;
+                }
+            }
+        }
+    }
+        
         img {
             width: 300px;
             height: 130px;
+            object-fit: cover;
             @include media(tablet) {
                 height: 300px;
                 width: 100%;
@@ -27,18 +63,7 @@
                 width: 100%;   
             }
         }
-    
-        .proyectos-tecnologias-usadas {
-            color: white;
-            text-align: start;
-            margin: 0 10px;
 
-            @include media(tablet) {
-                text-align: center;
-            }
-        }
-
-        
         .proyectos-imagen-hover {  
             &:before, &:after {
                 content: '';
@@ -50,7 +75,6 @@
                 position: absolute;
             }   
         }   
-    }
 
     .proyectos-Proximamente {
         text-align: center;
@@ -75,6 +99,9 @@
         border-bottom: 3px solid white;
         width: 35%;
         margin: 10px auto;
+        @include media(tablet) {
+            width: 160px;
+        }
         @include media(desktop) {
             width: 15%;     
         }
