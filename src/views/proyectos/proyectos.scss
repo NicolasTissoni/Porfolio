@@ -41,6 +41,7 @@
                 top: 50px;
                 @include media(tablet) {
                     padding: unset;
+                    top: 140px;
                 }
                 @include media(desktop) {
                     padding: unset;
@@ -103,7 +104,7 @@
             width: 160px;
         }
         @include media(desktop) {
-            width: 15%;     
+            width: 13%;     
         }
     }
 }
