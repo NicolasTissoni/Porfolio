@@ -1,22 +1,22 @@
 @import '../../styles/index.scss';
 
 .tecnologias-Container {
-    border: 2px solid white;
     min-height: 300px;
-    color: white;
+    color: $color-bg-2;
     display: flex;
     flex-direction: column;
     padding: 10px;
+    
     @include media(desktop) {
         min-height: unset;
-        width: 60%;
+        width: 70%;
         margin: 10px auto;       
     }
 
     .tecnologias-Titulo {
-        color: white;
+        color: $color-bg-2;
         text-align: center;
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $color-bg-2;
         width: 40%;
         margin: 10px auto;
         @include media(tablet) {
@@ -29,16 +29,15 @@
 
     .tecnologias-Iconos {
         font-size: 60px;
-        background-color: white;
-        color: rgb(0, 0, 26);
+        background-color: $color-bg-2;
+        color: $color-bg-1;
         margin: 20px;
-        width: 100%;
+        width: 90%;
         text-align: center;
         margin: 10px auto;
         border-radius: 10px;
-
         @include media(tablet) {
-            width: 50%;
+            width: 60%;
         }
 
         @include media(desktop) {

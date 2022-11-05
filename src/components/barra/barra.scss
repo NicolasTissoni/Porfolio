@@ -1,0 +1,12 @@
+@import '../../styles/index.scss';
+
+.barra {
+    width: 50%;
+    height: 500px;
+    padding: 10px;
+    background-color: $color-bg-2;
+    &::after, &::before {
+        content: '';
+        background-color: $color-bg-2;
+    }
+}

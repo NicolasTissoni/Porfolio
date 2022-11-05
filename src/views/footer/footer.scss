@@ -1,11 +1,13 @@
+@import '../../styles/index.scss';
+
 .footer-Container {
-    background-color: white;
+    background-color: $color-bg-2;
     padding: 10px;
-    margin: 20px auto;
+    margin-top: 20px;
     .footer-Titulo {
-        color: rgb(0, 0, 26);
+        color: $color-bg-1;;
         text-align: center;
-        border: 2px solid rgb(0, 0, 26);
+        border: 2px solid $color-bg-1;;
         width: 60%;
         margin: 0 auto;
         padding: 10px;

@@ -70,8 +70,8 @@
     }
 
     .tittle {
-        color: white;
-        border-bottom: 3px solid white;
+        color: $color-bg-2;
+        border-bottom: 3px solid $color-bg-2;
         margin: 0 auto;
 
     }
@@ -80,7 +80,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 10px 0;
+        margin: 10px auto;
         position: absolute;
         left: -1000px;
         top: 50px;
@@ -96,7 +96,7 @@
             flex-direction: row;
             margin: unset;
             justify-content: center;
-            margin: 20px auto;
+            margin: 0 auto;
         }
 
         &.active {
@@ -111,9 +111,9 @@
             margin: 10px 0;
             
             .navBar-contenido {
-                color: white;
+                color: $color-bg-2;
                 margin: 10px auto;
-                border: 3px solid white;
+                border: 3px solid $color-bg-2;
                 padding: 10px;
                 width: 50%;
                 border-radius: 7px;
@@ -128,8 +128,8 @@
                     width: 200px;
                     cursor: pointer;
                     &:hover {
-                        background-color: rgb(253, 253, 253);
-                        color: rgb(0, 0, 26);
+                        background-color: $color-bg-2;
+                        color: $color-bg-1;
                     }
                 }
             }  

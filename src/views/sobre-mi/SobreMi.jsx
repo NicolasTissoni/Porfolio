@@ -3,6 +3,7 @@ import './sobreMi.scss';
 import FotoPor from '../../images/FotoPor.jpg';
 import CV from '../../documents/CV NICO.pdf';
 
+
 const SobreMi = () => {
   return (
     <div className='sobre-Mi-Container' id='1'>

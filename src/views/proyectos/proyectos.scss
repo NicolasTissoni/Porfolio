@@ -1,18 +1,16 @@
 @import '../../styles/index.scss';
 
 .proyectos-Container {
-    border: 2px solid white;
     min-height: 500px;
-    
+    margin: 30px auto;
     @include media(desktop) {
         min-height: unset;
         width: 60%;
-        margin: 0 auto;
     }
     .proyectos-Info-Container {
         text-align: center;
         margin: 20px;
-        border: 2px solid white;
+        border: 2px solid $color-bg-2;
         padding: 10px;
         border-radius: 10px;
         position: relative;
@@ -27,19 +25,19 @@
             width: 100%;
             opacity: 0;
             transition: .5s ease;
-            background-color: rgb(0, 0, 26);
+            background-color: $color-bg-1;;
             display: flex;
             align-items: center;
             justify-content: center;  
-              
+            
             &:hover {
                 opacity: 0.7;
             }
             .overlay-text {
-                color: white;
+                color: $color-bg-2;
                 font-size: 20px;
                 position: absolute;
-                padding: 40px;
+                top: 50px;
                 @include media(tablet) {
                     padding: unset;
                 }
@@ -71,7 +69,7 @@
             }
 
             .txt {
-                color: white;
+                color: $color-bg-2;
                 position: absolute;
             }   
         }   
@@ -79,7 +77,7 @@
     .proyectos-Proximamente {
         text-align: center;
         margin: 20px;
-        border: 2px solid white;
+        border: 2px solid $color-bg-2;
         padding: 10px;
         border-radius: 10px;
         min-height: 300px;
@@ -88,15 +86,15 @@
         justify-content: center;
 
         h3 {
-            color: white;
+            color: $color-bg-2;
         
         }
     }
 
     .proyectos-titulo {
-        color: white;
+        color: $color-bg-2;
         text-align: center;
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $color-bg-2;
         width: 35%;
         margin: 10px auto;
         @include media(tablet) {

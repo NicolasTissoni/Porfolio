@@ -1,4 +1,5 @@
 @import './breakpoint';
+@import './colors';
 
 * { 
     margin: 0;
@@ -14,5 +15,5 @@
   body {
     margin: 0;
     font-family: 'Inconsolata', monospace;;
-    background-color: rgb(0, 0, 26);
+    background-color: $color-bg-1;
   }

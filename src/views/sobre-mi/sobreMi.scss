@@ -2,20 +2,21 @@
 
 .sobre-Mi-Container {
     margin-top: 20px;
-    border: 2px solid white;
-    min-height: 500px;
-    margin: 10px auto;
+    min-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
     @include media(desktop) {
         min-height: unset;
         width: 60%;   
     }
 
     .sobre-Mi-Titutlo {
-        color: white;
+        color: $color-bg-2;
         text-align: center;
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $color-bg-2;
         width: 30%;
-        margin: 10px auto;
+        margin: 20px auto;
         @include media(tablet) {
             width: 160px;
         }
@@ -30,18 +31,18 @@
         .sobre-Mi-Foto {
             height: 300px;
             margin: 0 auto;
-            border: 2px solid white;
+            border: 2px solid $color-bg-2;
             border-radius: 10px;
         }
 
         .sobre-Mi-Texto { 
-            color: white;
+            color: $color-bg-2;;
             text-align: center;
             margin-top: 10px;
         }
 
         .sobre-Mi-Iconos-Container {
-            color: white;
+            color: $color-bg-2;
             font-size: 40px;
             display: flex;
             align-items: center;
@@ -52,14 +53,14 @@
             }
             a {
                 text-decoration: none;
-                color: white;
+                color: $color-bg-2;
                 
                 @include media(desktop) {
                     padding: 10px;
                     padding: 10px;
                     border-radius: 10px;
                     &:hover {
-                        background-color: rgb(253, 253, 253);
+                        background-color: $color-bg-2;
                         color: rgb(0, 0, 26);
                     }       
                 }
