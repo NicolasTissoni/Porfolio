@@ -5,7 +5,7 @@ import CV from '../../documents/CV NICO.pdf';
 
 const SobreMi = () => {
   return (
-    <div className='sobre-Mi-Container'>
+    <div className='sobre-Mi-Container' id='1'>
       <h2 className='sobre-Mi-Titutlo'>Sobre Mi</h2>
       <div className='sobre-Mi-Info-Container'>
         <img className='sobre-Mi-Foto' src={FotoPor} alt="Foto del Porfolio"/>

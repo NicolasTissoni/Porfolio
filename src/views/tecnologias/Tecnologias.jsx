@@ -3,7 +3,7 @@ import './tecnologias.scss';
 
 const Tecnologias = () => {
   return (
-    <div className='tecnologias-Container'>
+    <div className='tecnologias-Container' id='2'>
         <h2 className='tecnologias-Titulo'>Tecnologias</h2>
         <div className='tecnologias-Iconos'>
             <i className="fa-brands fa-html5"></i>

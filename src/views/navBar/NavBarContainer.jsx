@@ -19,9 +19,9 @@ const NavBarContainer = () => {
         </label>
           <h1 className = 'tittle'>Nicolas Tissoni</h1>
         <div className = {`li-contenedor ${menu ? 'active' : null}`}>
-          <li className='li-nav' id='1'><a className = 'navBar-contenido' href="#1">Sobre Mi</a></li>
-          <li className='li-nav' id='2'><a className = 'navBar-contenido' href="#2">Tecnologias</a></li>
-          <li className='li-nav' id='3'><a className = 'navBar-contenido' href="#3">Proyectos</a></li>
+          <li className='li-nav'><a className = 'navBar-contenido' href="#1">Sobre Mi</a></li>
+          <li className='li-nav'><a className = 'navBar-contenido' href="#2">Tecnologias</a></li>
+          <li className='li-nav'><a className = 'navBar-contenido' href="#3">Proyectos</a></li>
         </div>
       </ul>
   )

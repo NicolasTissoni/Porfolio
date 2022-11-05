@@ -4,7 +4,7 @@ import Ecommerce from '../../images/E-Commerce.png';
 
 const Proyectos = () => {
   return (
-    <div className='proyectos-Container'>
+    <div className='proyectos-Container' id='3'>
         <h2 className='proyectos-titulo'>Proyectos</h2>
         <div className='proyectos-Info-Container'>
             <img src={Ecommerce} alt="Proyecto E-Commerce" />
