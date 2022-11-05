@@ -33,6 +33,7 @@
             &:hover {
                 opacity: 0.7;
             }
+        
             .overlay-text {
                 color: $color-bg-2;
                 font-size: 20px;
@@ -43,6 +44,7 @@
                 }
                 @include media(desktop) {
                     padding: unset;
+                    top: 170px;
                 }
             }
         }
