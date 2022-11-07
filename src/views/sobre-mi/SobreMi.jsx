@@ -1,7 +1,7 @@
 import React from 'react'
 import './sobreMi.scss';
 import FotoPor from '../../images/FotoPor.jpg';
-import CV from '../../documents/CV NICO.pdf';
+import CV from '../../documents/CV Nicolas Tissoni.pdf';
 
 
 const SobreMi = () => {
