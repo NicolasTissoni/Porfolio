@@ -22,7 +22,7 @@ const Proyectos = () => {
         <div className='proyectos-Info-Container'>
             <img src={Peliculas} alt="Proyecto-Peliculas" />
             <h3 className='proyectos-tecnologias-usadas'>E-Commerce</h3>
-            <a href="https://proyectopeliculas.netlify.app" target='_blank'>
+            <a href="https://peliculasproyecto.netlify.app" target='_blank'>
               <div className="overlay">
                 <div className="overlay-text">
                   <h2>Tecnologias Usadas:</h2>
