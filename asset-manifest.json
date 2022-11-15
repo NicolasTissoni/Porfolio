@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/Porfolio/static/css/main.4086be75.css",
-    "main.js": "/Porfolio/static/js/main.441761b2.js",
+    "main.js": "/Porfolio/static/js/main.438409bf.js",
     "static/media/FotoPor.jpg": "/Porfolio/static/media/FotoPor.93e88104e9da8027ab30.jpg",
     "static/media/Peliculas-Proyecto.png": "/Porfolio/static/media/Peliculas-Proyecto.42bc7e40ccc2c7105e80.png",
     "static/media/E-Commerce.png": "/Porfolio/static/media/E-Commerce.c456ccd369adb8f7ccf6.png",
     "static/media/CV Nicolas Tissoni.pdf": "/Porfolio/static/media/CV Nicolas Tissoni.1bf057c737cca9c07155.pdf",
+    "static/media/Kanban.png": "/Porfolio/static/media/Kanban.15c519a6c384591f0ce8.png",
     "index.html": "/Porfolio/index.html",
     "main.4086be75.css.map": "/Porfolio/static/css/main.4086be75.css.map",
-    "main.441761b2.js.map": "/Porfolio/static/js/main.441761b2.js.map"
+    "main.438409bf.js.map": "/Porfolio/static/js/main.438409bf.js.map"
   },
   "entrypoints": [
     "static/css/main.4086be75.css",
-    "static/js/main.441761b2.js"
+    "static/js/main.438409bf.js"
   ]
 }
